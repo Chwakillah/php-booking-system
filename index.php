@@ -16,14 +16,16 @@
 </head>
 <body>
     <h1>DAFTAR MEJA</h1>
+    <div class="container">
+        <div class="card">
+            <?php 
+            foreach ($select_meja as $meja) {  
+                ?>
 
-    <?php 
-        foreach ($select_meja as $meja) {  
-    ?>
-
-    <p><?= $meja['tipe_meja'] . " " .  $meja['no_meja']; ?></p>
-    <p><?= $meja['nama_pelanggan'] . " " .  $meja['jumlah_orang']; ?></p>
-
-    <?php } ?>
+            <p><?= $meja['tipe_meja'] . " " .  $meja['no_meja']; ?></p>
+            <p><?= $meja['nama_pelanggan'] . " " .  $meja['jumlah_orang']; ?></p>
+            <?php } ?>
+        </div>
+    </div>
 </body>
 </html>
