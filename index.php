@@ -11,6 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title> <?= APP_NAME ?> </title>
 </head>
 <body>
@@ -21,6 +22,7 @@
     ?>
 
     <p><?= $meja['tipe_meja'] . " " .  $meja['no_meja']; ?></p>
+    <p><?= $meja['nama_pelanggan'] . " " .  $meja['jumlah_orang']; ?></p>
 
     <?php } ?>
 </body>
